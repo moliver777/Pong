@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<title>Pong!</title>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/scene.js"></script>
+		<script type="text/javascript" src="js/ball.js"></script>
+		<script type="text/javascript" src="js/controller.js"></script>
+		<script type="text/javascript" src="js/application.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/application.css">
+	</head>
+	<body>
+		<div id="scene"></div>
+		<div id="ui">
+			<button id="start">Start</button>
+			<button id="reset">Reset</button>
+			<div id="high-score">
+				High Score: <span>-</span>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		window.pong = new PongApp();
+	});
+</script>
